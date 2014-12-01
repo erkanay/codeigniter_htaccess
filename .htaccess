@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteEngine /
+RewriteCond %{REQUEST_FILENAME} ! -f
+RewriteCond %{REQUEST_FILENAME} ! -d
+RewriteCond ^(.*)$ CodeIgniter/index.php/$1 [L]
